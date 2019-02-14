@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventType.cs" />
+    <Compile Include="Outing.cs" />
+    <Compile Include="OutingRepository.cs" />
+    <Compile Include="OutingsMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
