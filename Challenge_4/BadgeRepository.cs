@@ -4,6 +4,7 @@ namespace Challenge_4
 {
     public class BadgeRepository
     {
+        // Made these public for ease of access in the Unit Testing project
         public Dictionary<ulong,Badge> badges = new Dictionary<ulong,Badge>();
         public List<ulong> badgeNumbers = new List<ulong>();
 

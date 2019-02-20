@@ -46,7 +46,12 @@ namespace Challenge_4_Tests
         }
 
         [TestMethod]
+        public void BadgeRepository_RemoveBadge_Int_Test() {
+        }
 
+        [TestMethod]
+        public void BadgeRepository_AddBadge_Test() {
+        }
 
     }
 }
