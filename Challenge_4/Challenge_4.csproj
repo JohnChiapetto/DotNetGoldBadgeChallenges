@@ -42,7 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Badge.cs" />
+    <Compile Include="BadgeRepository.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Badge.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Challenge_1\Challenge_1.csproj">
+      <Project>{f1a44489-b58e-47bd-a821-197a5c09412f}</Project>
+      <Name>Challenge_1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

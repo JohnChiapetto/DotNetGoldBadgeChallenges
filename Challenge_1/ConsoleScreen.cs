@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_1
 {
-    interface ConsoleScreen
+    public interface ConsoleScreen
     {
         void Draw();
         void OnKeyPress(ConsoleKeyInfo key);
