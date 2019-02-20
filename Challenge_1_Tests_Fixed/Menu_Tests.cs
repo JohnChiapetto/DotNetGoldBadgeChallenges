@@ -5,7 +5,7 @@ using Challenge_1;
 namespace Challenge_1_Tests_Fixed
 {
     [TestClass]
-    public class UnitTest1
+    public class Menu_Tests
     {
         Menu menu = new Menu();
         MenuItem item = new MenuItem(0,"Cheeseburger","",new string[0],0.529m);

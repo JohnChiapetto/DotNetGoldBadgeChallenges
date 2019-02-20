@@ -4,11 +4,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Challenge_3_Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class OutingRepository_Tests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void OutingRepository_AddOuting_Test()
         {
+
         }
     }
 }

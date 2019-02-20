@@ -28,8 +28,20 @@ namespace Challenge_3
         public void Draw() {
             Console.Clear();
             for (int i = 0; i < repo.TotalOutings; i++) {
+                ConsoleColor fg = Console.ForegroundColor;
+                ConsoleColor bg = Console.BackgroundColor;
+                if (i == index) {
+                    Console.ForegroundColor = bg;
+                    Console.BackgroundColor = fg;
+                }
                 Console.WriteLine(Stringify(repo.GetOuting(i)));
+                if (i == index)
+                {
+                    Console.ForegroundColor = fg;
+                    Console.BackgroundColor = bg;
+                }
             }
+            Console.WriteLine("[Del] to delete, [Escape] to exit, [C] Costs By Type, [N] Add Outing, [UpArrow] to scroll up, [DownArrow] to scroll down");
         }
         public void OnKeyPress(ConsoleKeyInfo info) {
             ConsoleKey key = info.Key;
@@ -46,6 +58,7 @@ namespace Challenge_3
                     break;
                 case ConsoleKey.Delete:
                     repo.RemoveOuting(index);
+                    while (index >= repo.TotalOutings && repo.TotalOutings > 0) index--;
                     break;
                 case ConsoleKey.C:
                     repo.ShowOutingCostsByType();

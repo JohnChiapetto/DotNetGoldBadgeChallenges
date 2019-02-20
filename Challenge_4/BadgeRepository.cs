@@ -20,6 +20,9 @@ namespace Challenge_4
         }
 
         public Badge GetBadge(int index) {
+            System.Console.WriteLine("INDEX: "+index);
+            System.Console.WriteLine($"NUMBER: {badgeNumbers.Count}");
+            System.Console.WriteLine($"ANUMBER: {badges.Count}");
             return badges[badgeNumbers[index]];
         }
         public Badge GetBadge(ulong key) {
