@@ -49,16 +49,6 @@ namespace Challenge_4_Tests
         }
 
         [TestMethod]
-        public void BadgeRepository_RemoveBadge_Int_Test() {
-            badges.RemoveBadge(0);
-            int n = badges.badges.Count;
-
-            Console.WriteLine($"[RemoveBadge(int)] {n}");
-
-            Assert.AreEqual(0,badges.NumberOfBadges);
-        }
-
-        [TestMethod]
         public void BadgeRepository_AddBadge_Test() {
             badges.AddBadge(badge1);
             int n = badges.badges.Count;

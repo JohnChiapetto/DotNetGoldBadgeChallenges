@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Challenge_3
 {
-    class OutingRepository
+    public class OutingRepository
     {
-        List<Outing> outings = new List<Outing>();
+        // Public so that the test project can access it easily
+        public List<Outing> outings = new List<Outing>();
 
         public int TotalOutings { get { return outings.Count; } }
 

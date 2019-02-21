@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_3
 {
-    enum EventType
+    public enum EventType
     {
         AmusementPark,
         Bowling,

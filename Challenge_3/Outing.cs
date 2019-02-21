@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_3
 {
-    class Outing
+    public class Outing
     {
         public EventType Type;
         public int People;
